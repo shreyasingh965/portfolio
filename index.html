@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Shreya Singh · Software Engineer · Backend, Cloud & AI/ML</title>
+  <meta name="description" content="Portfolio of Shreya Singh — Software Engineer developing scalable backend systems, RESTful APIs, cloud-based applications, and AI-powered solutions.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23090a0d'/><path d='M9 11h14v2.5H9zm0 4.5h10v2.5H9zm0 4.5h14v2.5H9z' fill='%2338bdf8'/></svg>">
+  
+  <!-- Fonts: Space Grotesk (Display) & Geist / Geist Mono (Text & Code) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Geist:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Engine Stylesheet (Pristine) -->
+  <link rel="stylesheet" href="scrollcraft.css">
+  <!-- Build Foundation Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <span data-sc-progress aria-hidden="true"></span>
+
+  <!-- Ambient Film Grain Overlay -->
+  <div class="sc-grain" aria-hidden="true"></div>
+
+  <!-- Primary Site Chrome & Navigation -->
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#hero" class="site-brand" aria-label="Shreya Singh Portfolio Home">
+        <span class="site-brand__mono">SS</span>
+        <span class="site-brand__divider" aria-hidden="true">/</span>
+        <span class="site-brand__name">Shreya Singh</span>
+      </a>
+
+      <!-- Recruiter-Friendly Waypoint Anchors -->
+      <ul class="site-nav__links" role="list">
+        <li><a href="#about" class="site-nav__link" data-nav-target="about">About</a></li>
+        <li><a href="#skills" class="site-nav__link" data-nav-target="skills">Skills</a></li>
+        <li><a href="#projects" class="site-nav__link" data-nav-target="projects">Projects</a></li>
+        <li><a href="#experience" class="site-nav__link" data-nav-target="experience">Experience</a></li>
+        <li><a href="#contact" class="site-nav__link" data-nav-target="contact">Contact</a></li>
+      </ul>
+
+      <!-- Action Area: Verified Profile + Resume + Uniform CTA -->
+      <div class="site-nav__actions">
+        <a href="assets/Shreya_Singh_Resume.pdf" class="site-nav__resume" target="_blank" rel="noopener" title="View Resume PDF">
+          <span>Resume</span>
+          <svg class="icon-ext" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 2.5h6v6M9.5 2.5l-7 7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/shreya-singh6" class="site-nav__resume" target="_blank" rel="noopener" title="View LinkedIn Profile">
+          <span>LinkedIn</span>
+          <svg class="icon-ext" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 2.5h6v6M9.5 2.5l-7 7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#contact" class="btn-cta site-nav__cta">Get in touch</a>
+      </div>
+    </nav>
+
+    <!-- Waypoint Telemetry HUD -->
+    <div class="site-telemetry" aria-live="polite">
+      <div class="site-telemetry__item">
+        <span class="telemetry-label">SECTOR:</span>
+        <span class="telemetry-value" id="telemetry-sector">01 // ORIGIN</span>
+      </div>
+      <div class="site-telemetry__item site-telemetry__item--track">
+        <span class="telemetry-label">STATUS:</span>
+        <span class="telemetry-value" id="telemetry-status">SPATIAL CONTINUITY</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Continuous Worldflight Engine Container -->
+  <main id="top" data-sc-mode="worldflight" data-sc-seam="0.16" data-sc-lerp="0.12">
+
+    <!-- FIXED 3D VISUAL STAGE: 7 Waypoints across 1 unbroken camera timeline -->
+    <div data-sc-world class="sc-world" aria-hidden="true">
+
+      <!-- Leg 0: Identity (origin) · w = 1.2 -->
+      <div data-sc-segment data-sc-w="1.2" data-sc-linger="0.20" data-sc-waypoint="Origin" class="world-leg world-leg--origin">
+        <div class="hero-stage" id="hero-stage">
+          <!-- Layer 0: Far Horizon Environment (Scroll Rate: -0.2x) -->
+          <div class="hero-layer hero-layer--far" data-layer="far" data-hero-plane="0">
+            <div class="spatial-grid spatial-grid--far">
+              <img src="assets/hero/hero-horizon-grid.svg" alt="" class="hero-asset-plane hero-asset-plane--far" aria-hidden="true">
+            </div>
+            <div class="horizon-glow"></div>
+          </div>
+          <!-- Layer 1: Midground Structural Portal Frame (Scroll Rate: -0.5x) -->
+          <div class="hero-layer hero-layer--mid" data-layer="mid" data-hero-plane="1">
+            <div class="spatial-portal">
+              <img src="assets/hero/hero-portal-frame.svg" alt="" class="hero-asset-plane hero-asset-plane--mid" aria-hidden="true">
+              <div class="portal-frame portal-frame--left"></div>
+              <div class="portal-frame portal-frame--right"></div>
+            </div>
+          </div>
+          <!-- Layer 3: Grounded Foreground Plinth & Contact Anchor (Scroll Rate: 1.2x) -->
+          <div class="hero-layer hero-layer--fore" data-layer="fore" data-hero-plane="3">
+            <div class="spatial-plinth">
+              <img src="assets/hero/hero-plinth-datum.svg" alt="" class="hero-asset-plane hero-asset-plane--fore" aria-hidden="true">
+              <div class="plinth-datum">
+                <span class="plinth-coord">LAT 37.7749° N // LON 122.4194° W</span>
+                <span class="plinth-axis">AXIS // Z-NORMAL 0.000</span>
+              </div>
+            </div>
+          </div>
+          <!-- Layer 4: Volumetric Atmosphere & Particle Mist (Scroll Rate: 0.1x) -->
+          <div class="hero-layer hero-layer--atmo" data-layer="atmo" data-hero-plane="4">
+            <div class="spatial-mist"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Leg 1: Credibility (perspective) · w = 1.4 -->
+      <div data-sc-segment data-sc-w="1.4" data-sc-linger="0.30" data-sc-waypoint="Perspective" class="world-leg world-leg--perspective">
+        <div class="stage-scaffold stage-scaffold--editorial">
+          <div class="editorial-planes">
+            <div class="plane-slate plane-slate--receding"></div>
+            <div class="plane-grid-accent"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Leg 2: Capability (systems) · w = 1.8 -->
+      <div data-sc-segment data-sc-w="1.8" data-sc-linger="0.25" data-sc-waypoint="Systems" class="world-leg world-leg--systems">
+        <div class="stage-scaffold stage-scaffold--matrix">
+          <div class="matrix-axes">
+            <div class="axis-line axis-line--v1"></div>
+            <div class="axis-line axis-line--v2"></div>
+            <div class="axis-line axis-line--h"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Leg 3: Evidence (lineup) · w = 2.2 -->
+      <div data-sc-segment data-sc-w="2.2" data-sc-linger="0.30" data-sc-waypoint="Lineup" class="world-leg world-leg--lineup">
+        <div class="stage-scaffold stage-scaffold--corridor">
+          <div class="corridor-guide corridor-guide--left"></div>
+          <div class="corridor-guide corridor-guide--right"></div>
+          <div class="corridor-horizon"></div>
+        </div>
+      </div>
+
+      <!-- Leg 4: Pre-Peak Silence (threshold) · w = 1.0 -->
+      <div data-sc-segment data-sc-w="1.0" data-sc-linger="0.40" data-sc-waypoint="Threshold" class="world-leg world-leg--threshold">
+        <div class="stage-scaffold stage-scaffold--silence">
+          <div class="silence-void"></div>
+          <div class="silence-reticle-ambient" aria-hidden="true"></div>
+        </div>
+      </div>
+
+      <!-- Leg 5: The Peak (flagship) · w = 3.6 (The Single Climax) -->
+      <div data-sc-segment data-sc-w="3.6" data-sc-linger="0.45" data-sc-waypoint="Flagship" class="world-leg world-leg--flagship">
+        <!-- 3D Architecture Exploder Stage -->
+        <div class="exploder-stage" id="flagship-exploder">
+          <div class="exploder-camera">
+            <!-- Stratum Connector Rails (Visible during 3D separation) -->
+            <div class="exploder-connector-rails" aria-hidden="true">
+              <span class="rail-line rail-line--left"></span>
+              <span class="rail-line rail-line--right"></span>
+            </div>
+
+            <!-- Stratum 01: Inference Runtime & Interface Plane -->
+            <div class="stratum stratum--client" data-stratum="client" data-asset-slot="flagship-stratum-01">
+              <div class="stratum-header">
+                <span class="stratum-badge">STRATUM 01</span>
+                <span class="stratum-title">INFERENCE RUNTIME & STREAMLIT / FLASK UI</span>
+              </div>
+              <div class="stratum-visual">
+                <img src="assets/flagship/stratum-01-inference-ui.svg" alt="Stratum 01 architecture schematic: Inference runtime and UI" class="stratum-schematic" loading="lazy">
+              </div>
+            </div>
+            <!-- Stratum 02: Hybrid Neural Network Core & Explainability -->
+            <div class="stratum stratum--orchestration" data-stratum="orchestration" data-asset-slot="flagship-stratum-02">
+              <div class="stratum-header">
+                <span class="stratum-badge">STRATUM 02</span>
+                <span class="stratum-title">HYBRID CNN–VIT CORE & GRAD-CAM / RAG XAI</span>
+              </div>
+              <div class="stratum-visual">
+                <img src="assets/flagship/stratum-02-hybrid-core.svg" alt="Stratum 02 architecture schematic: Hybrid CNN-ViT core and XAI" class="stratum-schematic" loading="lazy">
+              </div>
+            </div>
+            <!-- Stratum 03: Preprocessing Pipeline & Data Ingestion -->
+            <div class="stratum stratum--persistence" data-stratum="persistence" data-asset-slot="flagship-stratum-03">
+              <div class="stratum-header">
+                <span class="stratum-badge">STRATUM 03</span>
+                <span class="stratum-title">PREPROCESSING PIPELINE & HAM10000 DATASET</span>
+              </div>
+              <div class="stratum-visual">
+                <img src="assets/flagship/stratum-03-ingestion-pipeline.svg" alt="Stratum 03 architecture schematic: HAM10000 ingestion pipeline" class="stratum-schematic" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Leg 6: Resolution (terminal) · w = 1.5 -->
+      <div data-sc-segment data-sc-w="1.5" data-sc-linger="0.20" data-sc-waypoint="Terminal" class="world-leg world-leg--terminal">
+        <div class="stage-scaffold stage-scaffold--terminal">
+          <div class="terminal-base"></div>
+          <div class="terminal-horizon"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- DECOUPLED ACCESSIBLE COPY OVERLAY: Fixed semantic layer windowed across scroll track -->
+    <div data-sc-world-copy class="sc-world__copy">
+
+      <!-- Directional contrast scrims (sibling elements, never inside copy blocks) -->
+      <div class="sc-world__scrim sc-scrim sc-scrim--band" aria-hidden="true"></div>
+
+      <!-- 1 · HERO IDENTITY (Beat 1 · origin · Layer 2: Focal Semantic Content) -->
+      <section id="hero" class="sc-copy sc-copy--lead copy-block copy-block--hero" data-sc-copy data-sc-window="hero" data-hero-plane="2" aria-labelledby="hero-heading">
+        <div class="sc-stack">
+          <div class="identity-badge">
+            <span class="status-indicator"></span>
+            <span class="sc-label">SOFTWARE ENGINEER // BACKEND, CLOUD & AI/ML</span>
+          </div>
+          <h1 id="hero-heading" class="sc-display sc-display--xl hero-title">
+            Developing scalable backend systems, cloud architectures, and AI solutions.
+          </h1>
+          <p class="sc-lede hero-lede">
+            Hands-on experience engineering scalable backend services, RESTful APIs, cloud integrations, and machine learning architectures with an emphasis on maintainability, precision, and production clarity.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn-primary">Get in touch</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2 · ABOUT & PERSPECTIVE (Beat 2 · perspective) -->
+      <section id="about" class="sc-copy sc-copy--center copy-block copy-block--about" data-sc-copy data-sc-window="0.08 0.20 0.25 0.25" aria-labelledby="about-heading">
+        <div class="sc-stack text-center">
+          <span class="sc-label">02 // ENGINEERING PHILOSOPHY & PERSPECTIVE</span>
+          <h2 id="about-heading" class="sc-display sc-display--lg">
+            Software built for scale must be engineered for maintainability.
+          </h2>
+          <div class="editorial-body sc-body">
+            <p>
+              Software Engineer with experience developing scalable backend systems, RESTful APIs, cloud-based applications, and AI-powered software solutions. Proficient in Java, Python, JavaScript, React.js, Flask, PostgreSQL, ANSI SQL, SDLC, Agile methodologies, and cloud technologies with hands-on experience building software applications and machine learning solutions.
+            </p>
+            <p class="editorial-meta">
+              Systems architecture is fundamentally a discipline of trade-offs: balancing raw throughput with failure tolerance, developer velocity with data consistency, and algorithmic complexity with operational clarity.
+            </p>
+          </div>
+          <div class="stat-cluster">
+            <div class="stat-cell">
+              <span class="stat-num">82%</span>
+              <span class="stat-desc">Model Classification Accuracy (Accident Severity)</span>
+            </div>
+            <div class="stat-cell">
+              <span class="stat-num">CNN + ViT</span>
+              <span class="stat-desc">Hybrid Deep Learning & Explainable AI (XAI)</span>
+            </div>
+            <div class="stat-cell">
+              <span class="stat-num">71.65%</span>
+              <span class="stat-desc">B.Tech CSE (AI & ML) Aggregate Standing</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3 · CAPABILITY & TECHNICAL MATRIX (Beat 3 · systems) -->
+      <section id="skills" class="sc-copy sc-copy--center copy-block copy-block--skills" data-sc-copy data-sc-window="0.20 0.34 0.25 0.25" aria-labelledby="skills-heading">
+        <div class="sc-stack text-center">
+          <span class="sc-label">03 // TECHNICAL COMPETENCIES & MATRIX</span>
+          <h2 id="skills-heading" class="sc-display sc-display--lg">
+            Architectural Disciplines & Tooling
+          </h2>
+          <p class="sc-body mx-auto">
+            Verifiable proficiencies across backend development, machine learning, cloud platforms, and software engineering principles.
+          </p>
+          
+          <div class="skills-matrix">
+            <!-- Column 1: Core Languages & Backend -->
+            <article class="matrix-card">
+              <h3 class="matrix-card__title">Languages & Backend</h3>
+              <ul class="matrix-card__list" role="list">
+                <li><span class="skill-tag">Python · Java · C++</span></li>
+                <li><span class="skill-tag">JavaScript · TypeScript</span></li>
+                <li><span class="skill-tag">Flask · REST APIs</span></li>
+                <li><span class="skill-tag">Client-Server Architecture · CRUD</span></li>
+                <li><span class="skill-tag">API Lifecycle · Auth & Authorization</span></li>
+              </ul>
+            </article>
+
+            <!-- Column 2: AI/ML, Cloud & DevOps -->
+            <article class="matrix-card">
+              <h3 class="matrix-card__title">AI/ML, Cloud & DevOps</h3>
+              <ul class="matrix-card__list" role="list">
+                <li><span class="skill-tag">Google Cloud Vertex AI</span></li>
+                <li><span class="skill-tag">Microsoft Azure (Fundamentals)</span></li>
+                <li><span class="skill-tag">TensorFlow · Scikit-learn · OpenCV</span></li>
+                <li><span class="skill-tag">Generative AI · RAG · Prompt Engineering</span></li>
+                <li><span class="skill-tag">Docker · Git · GitHub Actions · CI/CD</span></li>
+              </ul>
+            </article>
+
+            <!-- Column 3: Databases, CS Foundations & Frontend -->
+            <article class="matrix-card">
+              <h3 class="matrix-card__title">Databases & Foundations</h3>
+              <ul class="matrix-card__list" role="list">
+                <li><span class="skill-tag">PostgreSQL · Supabase · ANSI SQL</span></li>
+                <li><span class="skill-tag">Data Structures & Algorithms (DSA)</span></li>
+                <li><span class="skill-tag">Object-Oriented Programming (OOP)</span></li>
+                <li><span class="skill-tag">DBMS · Operating Systems</span></li>
+                <li><span class="skill-tag">React.js · HTML5 · CSS3 · Responsive</span></li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4 · EVIDENCE & PROJECT LINEUP (Beat 4 · lineup) -->
+      <section id="projects" class="sc-copy sc-copy--lead copy-block copy-block--projects" data-sc-copy data-sc-window="0.34 0.51 0.25 0.25" aria-labelledby="projects-heading">
+        <div class="sc-stack">
+          <div class="identity-badge">
+            <span class="status-indicator"></span>
+            <span class="sc-label">04 // PRODUCTION EVIDENCE & SYSTEM ARCHITECTURES</span>
+          </div>
+          <h2 id="projects-heading" class="sc-display sc-display--lg">
+            Selected Engineering Systems
+          </h2>
+          <p class="sc-lede">
+            Documented software implementations across deep learning architectures, cloud-native microservices, and predictive inference pipelines.
+          </p>
+
+          <div class="projects-deck">
+            <!-- Project 1 Card: Featured Lead Exhibit (AI/ML & Clinical XAI) -->
+            <article class="project-card project-card--primary" data-sc-tilt="4">
+              <div class="project-card__header">
+                <div class="project-card__meta">
+                  <span class="project-card__num">01</span>
+                  <span class="project-card__domain">HEALTHCARE AI // COMPUTER VISION & XAI</span>
+                </div>
+                <span class="project-card__period">03/2026 – Present</span>
+              </div>
+
+              <div class="project-card__body">
+                <div class="project-card__info">
+                  <h3 class="project-card__title">Explainable Skin Cancer Detection using CNN–ViT</h3>
+                  <div class="project-card__role">Role: Software Engineer (AI/ML)</div>
+                  <p class="project-card__desc">
+                    Engineered a hybrid CNN–Vision Transformer (ViT) architecture using TensorFlow and PyTorch for skin lesion classification on the HAM10000 dataset, fusing local convolutional feature extraction with global multi-head self-attention. Implemented Explainable AI (XAI) via Grad-CAM and attention saliency heatmaps for clinical transparency, coupled with RAG-based LLM medical reasoning for diagnostic decision support. Built real-time inference pipelines with Flask and Streamlit.
+                  </p>
+                  <div class="project-card__stack" aria-label="Documented technologies">
+                    <span class="tag-pill">Python</span>
+                    <span class="tag-pill">TensorFlow</span>
+                    <span class="tag-pill">PyTorch</span>
+                    <span class="tag-pill">Vision Transformer</span>
+                    <span class="tag-pill">Grad-CAM (XAI)</span>
+                    <span class="tag-pill">RAG / LLMs</span>
+                    <span class="tag-pill">Flask</span>
+                    <span class="tag-pill">Streamlit</span>
+                    <span class="tag-pill">HAM10000</span>
+                    <span class="tag-pill">OpenCV</span>
+                  </div>
+                </div>
+
+                <div class="project-card__visual" aria-hidden="true">
+                  <div class="schematic-box">
+                    <img src="assets/projects/project-1-schematic.svg" alt="" class="project-schematic" loading="lazy">
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-card__footer">
+                <span class="project-badge">CLINICAL INTERPRETABILITY · HYBRID DUAL-BRANCH PIPELINE</span>
+              </div>
+            </article>
+
+            <!-- Project 2 Card: Cloud-Native Microservices & GenAI -->
+            <article class="project-card project-card--secondary" data-sc-tilt="4">
+              <div class="project-card__header">
+                <div class="project-card__meta">
+                  <span class="project-card__num">02</span>
+                  <span class="project-card__domain">CLOUD-NATIVE // MICROSERVICES & GENAI</span>
+                </div>
+                <span class="project-card__period">12/2025 – 02/2026</span>
+              </div>
+
+              <div class="project-card__body">
+                <div class="project-card__info">
+                  <h3 class="project-card__title">AI-Powered Marketplace Assistant for Local Artisans</h3>
+                  <div class="project-card__role">Role: Full-Stack Software Developer</div>
+                  <p class="project-card__desc">
+                    Architected a cloud-native, microservices-based application using Python (Flask), JavaScript, and RESTful APIs to automate artisan product onboarding. Integrated Google Cloud Vertex AI for intelligent content generation, engineered secure PostgreSQL database schemas with query optimization, and followed strict OOP principles and Agile/Scrum delivery.
+                  </p>
+                  <div class="project-card__stack" aria-label="Documented technologies">
+                    <span class="tag-pill">Python</span>
+                    <span class="tag-pill">Flask</span>
+                    <span class="tag-pill">JavaScript</span>
+                    <span class="tag-pill">Google Cloud Vertex AI</span>
+                    <span class="tag-pill">PostgreSQL</span>
+                    <span class="tag-pill">RESTful APIs</span>
+                    <span class="tag-pill">Agile / Scrum</span>
+                  </div>
+                </div>
+
+                <div class="project-card__visual" aria-hidden="true">
+                  <div class="schematic-box">
+                    <img src="assets/projects/project-2-schematic.svg" alt="" class="project-schematic" loading="lazy">
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-card__footer">
+                <span class="project-badge">GCP VERTEX AI · MICROSERVICE ARCHITECTURE</span>
+              </div>
+            </article>
+
+            <!-- Project 3 Card: Predictive Machine Learning & Real-Time Pipeline -->
+            <article class="project-card project-card--tertiary" data-sc-tilt="4">
+              <div class="project-card__header">
+                <div class="project-card__meta">
+                  <span class="project-card__num">03</span>
+                  <span class="project-card__domain">PREDICTIVE ML // BACKEND INFERENCE SERVICE</span>
+                </div>
+                <span class="project-card__period">08/2025 – 11/2025</span>
+              </div>
+
+              <div class="project-card__body">
+                <div class="project-card__info">
+                  <h3 class="project-card__title">Road Accident Severity Prediction</h3>
+                  <div class="project-card__role">Role: Backend Software Developer</div>
+                  <p class="project-card__desc">
+                    Trained and validated a predictive machine learning model achieving 82% classification accuracy through structured data preprocessing, feature engineering, and rigorous model evaluation. Developed production-ready RESTful APIs in Python (Flask) for real-time inference and optimized backend pipelines using Data Structures & Algorithms (DSA) principles.
+                  </p>
+                  <div class="project-card__stack" aria-label="Documented technologies">
+                    <span class="tag-pill">Python</span>
+                    <span class="tag-pill">Flask</span>
+                    <span class="tag-pill">Scikit-learn</span>
+                    <span class="tag-pill">Pandas</span>
+                    <span class="tag-pill">NumPy</span>
+                    <span class="tag-pill">DSA Optimization</span>
+                    <span class="tag-pill">REST APIs</span>
+                  </div>
+                </div>
+
+                <div class="project-card__visual" aria-hidden="true">
+                  <div class="schematic-box">
+                    <img src="assets/projects/project-3-schematic.svg" alt="" class="project-schematic" loading="lazy">
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-card__footer">
+                <div class="project-card__metric">
+                  <span class="metric-label">CLASSIFICATION ACCURACY</span>
+                  <span class="metric-val">82%</span>
+                </div>
+                <span class="project-badge">REAL-TIME INFERENCE · PIPELINE OPTIMIZATION</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5 · AUTHORED SILENCE & TRANSITION (Pre-Peak Silence · threshold) -->
+      <section id="transition" class="sc-copy sc-copy--center copy-block copy-block--silence" data-sc-copy data-sc-window="0.52 0.58 0.3 0.3" aria-labelledby="transition-heading">
+        <div class="silence-marker">
+          <span class="sc-label">05 // THE THRESHOLD</span>
+          <div class="silence-reticle" aria-hidden="true">
+            <span class="reticle-axis reticle-axis--h"></span>
+            <span class="reticle-axis reticle-axis--v"></span>
+            <span class="reticle-center"></span>
+          </div>
+          <h2 id="transition-heading" class="silence-heading">
+            Entering Deep Architectural Strata
+          </h2>
+          <p class="silence-sub">
+            SYSTEM CALIBRATION // PRE-PEAK RECONFIGURATION
+          </p>
+        </div>
+      </section>
+
+      <!-- 6 · THE PEAK · ARCHITECTURAL DEEP DIVE (Beat 5 · flagship) -->
+      <section id="flagship" class="sc-copy sc-copy--trail copy-block copy-block--flagship" data-sc-copy data-sc-window="0.58 0.86 0.2 0.2" aria-labelledby="flagship-heading">
+        <div class="sc-stack text-right">
+          <span class="sc-label">06 // THE ARCHITECTURAL PEAK</span>
+          <h2 id="flagship-heading" class="sc-display sc-display--lg">
+            Explainable Skin Cancer Detection using CNN–ViT
+          </h2>
+          <p class="sc-body ml-auto">
+            Deep architectural dissection: fusing local convolutional feature representation with transformer global self-attention, verified through Explainable AI (Grad-CAM) and RAG-driven clinical reasoning.
+          </p>
+
+          <div class="flagship-specs">
+            <div class="spec-card">
+              <span class="spec-card__label">STRATUM 01</span>
+              <span class="spec-card__name">Inference & Clinical Interface Plane</span>
+              <p class="spec-card__text">Real-time HAM10000 image classification delivered via Streamlit and Flask, rendering Grad-CAM saliency heatmaps and ViT attention maps for clinical transparency and diagnostic decision support.</p>
+            </div>
+            <div class="spec-card">
+              <span class="spec-card__label">STRATUM 02</span>
+              <span class="spec-card__name">Hybrid Neural Core & RAG Reasoning Core</span>
+              <p class="spec-card__text">TensorFlow/PyTorch hybrid network capturing local lesion textures alongside global multi-head self-attention, integrated with RAG-based LLM reasoning for human-readable clinical insight.</p>
+            </div>
+            <div class="spec-card">
+              <span class="spec-card__label">STRATUM 03</span>
+              <span class="spec-card__name">Data Pipeline & HAM10000 Ingestion Ledger</span>
+              <p class="spec-card__text">High-throughput image preprocessing, normalization, and augmentation workflows built with OpenCV, NumPy, and Pandas supporting reproducible model training and live evaluation.</p>
+            </div>
+          </div>
+
+          <div class="flagship-actions">
+            <a href="#contact" class="btn-primary">Get in touch</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7 · EXPERIENCE, EDUCATION & CREDENTIALS (Beat 6 Part 1 · terminal) -->
+      <section id="experience" class="sc-copy sc-copy--lead copy-block copy-block--experience" data-sc-copy data-sc-window="0.84 0.94 0.25 0.25" aria-labelledby="experience-heading">
+        <div class="sc-stack">
+          <span class="sc-label">07 // ENGINEERING EXPERIENCE & CREDENTIALS</span>
+          <h2 id="experience-heading" class="sc-display sc-display--lg">
+            Experience, Education & Credentials
+          </h2>
+          <p class="sc-body">
+            Chronological software engineering experience, formal degree standing, technical certifications, and engineering milestones.
+          </p>
+
+          <div class="timeline">
+            <!-- Subsection: Engineering Experience -->
+            <div class="timeline-group-header">
+              <span class="timeline-group-label">01 // DOCUMENTED ENGINEERING EXPERIENCE</span>
+            </div>
+
+            <!-- Engineering Experience 1 -->
+            <article class="timeline-entry">
+              <div class="timeline-entry__meta">
+                <span class="timeline-period">03/2026 – Present</span>
+                <span class="timeline-role">Software Engineer (AI/ML)</span>
+              </div>
+              <div class="timeline-entry__content">
+                <h3 class="timeline-company">Explainable Skin Cancer Detection System</h3>
+                <p class="timeline-desc">
+                  Engineered a hybrid CNN–Vision Transformer (ViT) architecture in TensorFlow/PyTorch for HAM10000 skin lesion classification, fusing local convolutional feature extraction with global self-attention. Implemented Explainable AI (XAI) via Grad-CAM and attention saliency heatmaps, coupled with RAG-based LLM medical reasoning for diagnostic decision support. Built real-time inference pipelines with Flask, Streamlit, and OpenCV within an Agile 4-member team.
+                </p>
+              </div>
+            </article>
+
+            <!-- Engineering Experience 2 -->
+            <article class="timeline-entry">
+              <div class="timeline-entry__meta">
+                <span class="timeline-period">12/2025 – 02/2026</span>
+                <span class="timeline-role">Full-Stack Software Developer</span>
+              </div>
+              <div class="timeline-entry__content">
+                <h3 class="timeline-company">AI-Powered Marketplace Assistant</h3>
+                <p class="timeline-desc">
+                  Architected a cloud-native microservices platform using Python (Flask), JavaScript, RESTful APIs, and PostgreSQL. Automated product onboarding content generation using Google Cloud Vertex AI and designed secure relational database schemas adhering to OOP and Agile/Scrum delivery.
+                </p>
+              </div>
+            </article>
+
+            <!-- Engineering Experience 3 -->
+            <article class="timeline-entry">
+              <div class="timeline-entry__meta">
+                <span class="timeline-period">08/2025 – 11/2025</span>
+                <span class="timeline-role">Backend Software Developer</span>
+              </div>
+              <div class="timeline-entry__content">
+                <h3 class="timeline-company">Road Accident Severity Prediction</h3>
+                <p class="timeline-desc">
+                  Developed a predictive machine learning classifier achieving 82% validation accuracy through structured data preprocessing and feature engineering. Built RESTful APIs in Python (Flask) for real-time model inference and optimized backend pipelines using Data Structures & Algorithms (DSA) principles.
+                </p>
+              </div>
+            </article>
+
+            <!-- Subsection: Formal Education -->
+            <div class="timeline-group-header">
+              <span class="timeline-group-label">02 // FORMAL EDUCATION</span>
+            </div>
+
+            <!-- Primary Education -->
+            <article class="timeline-entry">
+              <div class="timeline-entry__meta">
+                <span class="timeline-period">10/2023 – 06/2027</span>
+                <span class="timeline-role">B.Tech · CSE (AI & ML)</span>
+              </div>
+              <div class="timeline-entry__content">
+                <h3 class="timeline-company">Pranveer Singh Institute of Technology</h3>
+                <p class="timeline-desc">
+                  Bachelor of Technology in Computer Science and Engineering (Artificial Intelligence and Machine Learning). Academic aggregate: <strong>71.65%</strong> (through 6th semester).
+                </p>
+                <div class="education-subledger">
+                  <div class="subledger-item">
+                    <span class="subledger-badge">INTERMEDIATE</span>
+                    <span class="subledger-inst">U.P Kirana Seva Samiti Balika Vidyalaya</span>
+                    <span class="subledger-period">04/2021 – 06/2022</span>
+                    <span class="subledger-score">74.6%</span>
+                  </div>
+                  <div class="subledger-item">
+                    <span class="subledger-badge">HIGH SCHOOL</span>
+                    <span class="subledger-inst">U.P Kirana Seva Samiti Balika Vidyalaya</span>
+                    <span class="subledger-period">04/2019 – 03/2020</span>
+                    <span class="subledger-score">85.6%</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Subsection: Certifications & Milestones -->
+            <div class="timeline-group-header">
+              <span class="timeline-group-label">03 // CERTIFICATIONS & ENGINEERING MILESTONES</span>
+            </div>
+
+            <!-- Certifications & Milestones Grid -->
+            <div class="credentials-deck">
+              <div class="credential-card">
+                <span class="credential-label">PROFESSIONAL CERTIFICATE</span>
+                <h4 class="credential-title">IBM Full Stack Software Developer</h4>
+                <p class="credential-issuer">Coursera · Verified Professional Certificate</p>
+              </div>
+              <div class="credential-card">
+                <span class="credential-label">SPECIALIZATION</span>
+                <h4 class="credential-title">Machine Learning Specialization</h4>
+                <p class="credential-issuer">Coursera · Verified Specialization</p>
+              </div>
+              <div class="credential-card">
+                <span class="credential-label">ENGINEERING CHALLENGE</span>
+                <h4 class="credential-title">Flipkart GRiD 8.0 — Round 2 Qualifier</h4>
+                <p class="credential-issuer">Qualified for Round 2 (Coding Round) · 07/2026</p>
+              </div>
+              <div class="credential-card">
+                <span class="credential-label">CONFERENCE & ECOSYSTEM</span>
+                <h4 class="credential-title">E-Summit IIT Kanpur 2025</h4>
+                <p class="credential-issuer">Attended · Entrepreneurship & Emerging Tech · 01/2025</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 8 · RESOLUTION & CONTACT (Beat 6 Part 2 · finale permanent hold) -->
+      <section id="contact" class="sc-copy sc-copy--center copy-block copy-block--contact" data-sc-copy data-sc-window="finale" aria-labelledby="contact-heading">
+        <div class="sc-stack text-center">
+          <span class="sc-label">08 // RESOLUTION & CONTACT</span>
+          <h2 id="contact-heading" class="sc-display sc-display--lg">
+            Let's build systems that endure.
+          </h2>
+          <p class="sc-body mx-auto contact-lede">
+            Available for software engineering roles, scalable backend development, and AI/ML system collaborations.
+          </p>
+
+          <div class="contact-card">
+            <div class="contact-card__primary">
+              <span class="contact-label">DIRECT INQUIRY</span>
+              <a href="mailto:shreya.singh9@outlook.com" class="contact-email">
+                shreya.singh9@outlook.com
+              </a>
+            </div>
+            
+            <div class="contact-card__channels">
+              <a href="https://github.com/shreyasingh965" class="channel-link" target="_blank" rel="noopener">
+                <span>GitHub</span>
+                <span class="channel-arrow" aria-hidden="true">↗</span>
+              </a>
+              <a href="https://linkedin.com/in/shreya-singh6" class="channel-link" target="_blank" rel="noopener">
+                <span>LinkedIn</span>
+                <span class="channel-arrow" aria-hidden="true">↗</span>
+              </a>
+              <a href="assets/Shreya_Singh_Resume.pdf" class="channel-link" target="_blank" rel="noopener">
+                <span>Resume (PDF)</span>
+                <span class="channel-arrow" aria-hidden="true">↗</span>
+              </a>
+            </div>
+
+            <div class="contact-card__cta-wrap">
+              <a href="mailto:shreya.singh9@outlook.com" class="btn-primary btn-cta">Get in touch</a>
+              <a href="assets/Shreya_Singh_Resume.pdf" class="btn-secondary btn-cta" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span>View Resume</span>
+              </a>
+            </div>
+          </div>
+
+          <footer class="site-footer">
+            <p class="footer-copy">
+              © <span id="year-display">2026</span> Shreya Singh. Designed and engineered as a continuous-world 3D Scrollcraft experience.
+            </p>
+            <p class="footer-meta">
+              Built on semantic HTML, vanilla CSS, and the Scrollcraft engine. Zero speculative content.
+            </p>
+          </footer>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Empty Document Flow Spacer: Engine sizes height to (sum weights + 1) * innerHeight -->
+    <div data-sc-spacer class="sc-world__spacer" aria-hidden="true"></div>
+
+  </main>
+
+  <!-- Upstream Scrollcraft Engine (Pristine, Unmodified) -->
+  <script src="scrollcraft.js"></script>
+
+  <!-- Page Foundation Logic & Waypoint Controller -->
+  <script src="script.js"></script>
+
+</body>
+</html>

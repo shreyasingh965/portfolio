@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 160" width="100%" height="100%" fill="none">
+  <!-- Stratum 02 Panel Frame -->
+  <rect x="1" y="1" width="718" height="158" rx="4" fill="#12141a" stroke="rgba(255, 255, 255, 0.16)" stroke-width="1.25"/>
+  <!-- Status Badge & Stratum Identity -->
+  <rect x="20" y="18" width="85" height="22" rx="3" fill="rgba(56, 189, 248, 0.15)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1"/>
+  <text x="62" y="33" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="9" fill="#38bdf8" font-weight="700">STRATUM 02</text>
+  <text x="120" y="34" font-family="'Geist Mono', monospace" font-size="11" fill="#f2f3f5" font-weight="600">HYBRID CNN–VIT NEURAL CORE & GRAD-CAM / RAG XAI</text>
+  
+  <!-- Architectural Blocks -->
+  <!-- Block A: CNN Local Feature Extraction -->
+  <rect x="20" y="58" width="200" height="80" rx="3" fill="#181b22" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1"/>
+  <text x="120" y="86" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="10" fill="#f2f3f5">CNN Architecture</text>
+  <text x="120" y="104" text-anchor="middle" font-family="'Geist', sans-serif" font-size="8.5" fill="#8e929b">Local Lesion Texture Maps</text>
+  <text x="120" y="122" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="8" fill="#4b4f59">TensorFlow / PyTorch Core</text>
+  
+  <!-- Inter-block connector -->
+  <path d="M 220 98 L 255 98" stroke="#38bdf8" stroke-width="1.25"/>
+  
+  <!-- Block B: Vision Transformer & Multi-Head Self-Attention -->
+  <rect x="255" y="58" width="220" height="80" rx="3" fill="#181b22" stroke="#38bdf8" stroke-width="1.25"/>
+  <text x="365" y="86" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="10" fill="#38bdf8" font-weight="600">Vision Transformer (ViT)</text>
+  <text x="365" y="104" text-anchor="middle" font-family="'Geist', sans-serif" font-size="8.5" fill="#f2f3f5">Global Contextual Attention</text>
+  <text x="365" y="122" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="8" fill="#8e929b">Patch-Token Embeddings</text>
+  
+  <!-- Inter-block connector -->
+  <path d="M 475 98 L 510 98" stroke="#38bdf8" stroke-width="1.25"/>
+  
+  <!-- Block C: Explainable AI & RAG LLM Reasoning -->
+  <rect x="510" y="58" width="190" height="80" rx="3" fill="#181b22" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1"/>
+  <text x="605" y="86" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="10" fill="#f2f3f5">XAI & RAG Reasoning</text>
+  <text x="605" y="104" text-anchor="middle" font-family="'Geist', sans-serif" font-size="8.5" fill="#8e929b">Grad-CAM Visual Heatmaps</text>
+  <text x="605" y="122" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="8" fill="#4b4f59">RAG Decision Transparency</text>
+</svg>

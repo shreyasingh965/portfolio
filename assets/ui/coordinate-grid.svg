@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%" fill="none">
+  <defs>
+    <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.05)" stroke-width="0.75"/>
+      <circle cx="40" cy="40" r="1" fill="rgba(56, 189, 248, 0.2)"/>
+    </pattern>
+    <pattern id="grid-major" width="200" height="200" patternUnits="userSpaceOnUse">
+      <path d="M 200 0 L 0 0 0 200" fill="none" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1.25"/>
+      <path d="M 0 10 L 0 0 10 0 M 190 0 L 200 0 200 10 M 200 190 L 200 200 190 200 M 10 200 L 0 200 0 190" fill="none" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1.5"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grid-pattern)"/>
+  <rect width="100%" height="100%" fill="url(#grid-major)"/>
+  <!-- Central Orthogonal Axes -->
+  <line x1="0" y1="300" x2="800" y2="300" stroke="rgba(56, 189, 248, 0.25)" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="400" y1="0" x2="400" y2="600" stroke="rgba(56, 189, 248, 0.25)" stroke-width="1" stroke-dasharray="4 4"/>
+  <!-- Origin Reticle -->
+  <circle cx="400" cy="300" r="16" stroke="rgba(56, 189, 248, 0.5)" stroke-width="1.25"/>
+  <circle cx="400" cy="300" r="3" fill="#38bdf8"/>
+</svg>

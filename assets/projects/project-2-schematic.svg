@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="100%" height="100%" fill="none">
+  <!-- Container Framing -->
+  <rect x="1" y="1" width="598" height="338" rx="6" fill="#12141a" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1.5"/>
+  <path d="M 1 30 L 1 1 L 30 1 M 570 1 L 599 1 L 599 30 M 599 310 L 599 339 L 570 339 M 30 339 L 1 339 L 1 310" stroke="#38bdf8" stroke-width="2"/>
+  
+  <!-- Subtle Grid Lines -->
+  <line x1="1" y1="80" x2="599" y2="80" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1"/>
+  <line x1="1" y1="170" x2="599" y2="170" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1"/>
+  <line x1="1" y1="260" x2="599" y2="260" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1"/>
+  
+  <!-- Stage 1: Client / Web Frontend -->
+  <rect x="30" y="125" width="100" height="90" rx="4" fill="#181b22" stroke="rgba(255, 255, 255, 0.2)" stroke-width="1"/>
+  <text x="80" y="165" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="10" fill="#f2f3f5">Artisan UI</text>
+  <text x="80" y="185" text-anchor="middle" font-family="'Geist', sans-serif" font-size="8.5" fill="#8e929b">Product Portal</text>
+  
+  <!-- Connector 1 -->
+  <path d="M 130 170 L 180 170" stroke="#38bdf8" stroke-width="1.5"/>
+  
+  <!-- Stage 2: REST API & Backend Microservice (Flask) -->
+  <rect x="180" y="105" width="140" height="130" rx="4" fill="#181b22" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="250" y="140" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="10" fill="#38bdf8" font-weight="600">Flask Service</text>
+  <text x="250" y="158" text-anchor="middle" font-family="'Geist', sans-serif" font-size="8.5" fill="#8e929b">RESTful API Endpoints</text>
+  <line x1="195" y1="175" x2="305" y2="175" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1"/>
+  <text x="250" y="195" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="9" fill="#f2f3f5">OOP & SDLC Engine</text>
+  <text x="250" y="212" text-anchor="middle" font-family="'Geist', sans-serif" font-size="8" fill="#4b4f59">Schema Validation</text>
+  
+  <!-- Connector to Vertex AI and Database -->
+  <path d="M 320 140 L 380 110" stroke="rgba(56, 189, 248, 0.6)" stroke-width="1.25"/>
+  <path d="M 320 200 L 380 230" stroke="rgba(56, 189, 248, 0.6)" stroke-width="1.25"/>
+  
+  <!-- Stage 3A: Google Cloud Vertex AI (Content Gen) -->
+  <rect x="380" y="80" width="180" height="65" rx="4" fill="#181b22" stroke="rgba(255, 255, 255, 0.25)" stroke-width="1"/>
+  <text x="470" y="108" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="10" fill="#38bdf8">GCP Vertex AI</text>
+  <text x="470" y="126" text-anchor="middle" font-family="'Geist', sans-serif" font-size="8.5" fill="#8e929b">Automated Content Generation</text>
+  
+  <!-- Stage 3B: PostgreSQL Database Schema -->
+  <rect x="380" y="195" width="180" height="65" rx="4" fill="#181b22" stroke="rgba(255, 255, 255, 0.25)" stroke-width="1"/>
+  <text x="470" y="223" text-anchor="middle" font-family="'Geist Mono', monospace" font-size="10" fill="#f2f3f5">PostgreSQL Engine</text>
+  <text x="470" y="241" text-anchor="middle" font-family="'Geist', sans-serif" font-size="8.5" fill="#8e929b">Secure Relational Schemas</text>
+  
+  <!-- Header Identification Tag -->
+  <text x="30" y="45" font-family="'Geist Mono', monospace" font-size="9" fill="#38bdf8" letter-spacing="1">SYSTEM ARCHITECTURE · CLOUD-NATIVE MICROSERVICES & GENAI</text>
+</svg>

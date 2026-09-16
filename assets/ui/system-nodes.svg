@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240" width="100%" height="100%" fill="none">
+  <!-- Connective System Bus Lines -->
+  <path d="M 60 120 L 180 120 L 220 60 L 380 60 L 420 120 L 540 120" stroke="rgba(56, 189, 248, 0.35)" stroke-width="1.5" fill="none"/>
+  <path d="M 180 120 L 220 180 L 380 180 L 420 120" stroke="rgba(255, 255, 255, 0.2)" stroke-width="1.25" stroke-dasharray="4 4" fill="none"/>
+  <!-- Primary Nodes -->
+  <!-- Node 1: Ingress / Gateway -->
+  <circle cx="60" cy="120" r="14" fill="#12141a" stroke="#38bdf8" stroke-width="2"/>
+  <circle cx="60" cy="120" r="5" fill="#38bdf8"/>
+  <!-- Node 2: Service / Compute Core A -->
+  <rect x="270" y="44" width="60" height="32" rx="4" fill="#12141a" stroke="rgba(255, 255, 255, 0.3)" stroke-width="1.5"/>
+  <circle cx="300" cy="60" r="4" fill="#38bdf8"/>
+  <!-- Node 3: Service / Compute Core B -->
+  <rect x="270" y="164" width="60" height="32" rx="4" fill="#12141a" stroke="rgba(255, 255, 255, 0.2)" stroke-width="1.5"/>
+  <circle cx="300" cy="180" r="4" fill="rgba(255, 255, 255, 0.4)"/>
+  <!-- Node 4: Persistence / Egress -->
+  <circle cx="540" cy="120" r="14" fill="#12141a" stroke="#38bdf8" stroke-width="2"/>
+  <circle cx="540" cy="120" r="5" fill="#38bdf8"/>
+</svg>
